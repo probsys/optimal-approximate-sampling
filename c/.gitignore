@@ -1,0 +1,14 @@
+*.gch
+*.gcda
+*.gcna
+*.gcno
+*.o
+*.out
+mainc
+mainc.opt
+maincpp
+maincpp.opt
+preprocessc
+preprocessc.opt
+preprocesscpp
+preprocesscpp.opt

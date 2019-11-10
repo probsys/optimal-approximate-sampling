@@ -1,0 +1,3 @@
+#!/bin/sh
+d=$(dirname $(realpath "${0}"))
+echo "scale = 0; orderm(2, ${1})" | bc -q -l ${d}/phi

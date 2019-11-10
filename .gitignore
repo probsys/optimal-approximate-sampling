@@ -1,0 +1,8 @@
+/*.egg-info
+/src/version.py
+/VERSION
+
+__pycache__/
+
+build/
+dist/
