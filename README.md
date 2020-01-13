@@ -13,8 +13,10 @@ and sampling algorithms from:
 The C code for the main sampler is in the `c/` directory and the
 Python 3 libraries are in the `src/` directory.
 
-Only Python 3 is required to build and use the software (no dependencies):
+Only Python 3 is required to build and use the software (no dependencies).
 
+    $ git clone https://github.com/probcomp/optimal-approximate-sampling
+    $ cd optimal-approximate-sampling
     $ python setup.py install
 
 To build the C sampler
@@ -78,7 +80,6 @@ To test the Python library and run a crash test in C (requires
 
 ## Experiments
 
-The code for experiments in the main paper is available in an extended
-version of this repository that lives on the ACM Digital Library. Please
-refer to the online supplementary material at
-https://doi.org/10.1145/3371104.
+The code for experiments in the POPL publication is available in a tarball
+on the ACM Digital Library. Please refer to the online supplementary
+material at https://doi.org/10.1145/3371104.
