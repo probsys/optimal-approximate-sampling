@@ -1,12 +1,12 @@
 # Optimal Approximate Sampling From Discrete Probability Distributions
 
-This repository contains a prototype implementation of the optimization
-and sampling algorithms from:
+This repository contains a prototype implementation of the optimal
+sampling algorithms from:
 
-  Feras A. Saad, Cameron E. Freer, Martin C. Rinard, and Vikash K.
-  Mansinghka. Optimal Approximate Sampling From Discrete Probability
-  Distributions. Proc. ACM Program. Lang. 4, POPL, Article 36 (January
-  2020), 33 pages. https://doi.org/10.1145/3371104
+> Feras A. Saad, Cameron E. Freer, Martin C. Rinard, and Vikash K. Mansinghka.
+[Optimal Approximate Sampling From Discrete Probability
+Distributions](https://doi.org/10.1145/3371104).
+Proc. ACM Program. Lang. 4, POPL, Article 36 (January 2020), 33 pages.
 
 ## Installing
 
