@@ -3,7 +3,7 @@
 This repository contains a prototype implementation of the optimal
 sampling algorithms from:
 
-Feras A. Saad, Cameron E. Freer, Martin C. Rinard, and Vikash K. Mansinghka.
+> Feras A. Saad, Cameron E. Freer, Martin C. Rinard, and Vikash K. Mansinghka.
 [Optimal Approximate Sampling From Discrete Probability
 Distributions](https://doi.org/10.1145/3371104).
 _Proc. ACM Program. Lang._ 4, POPL, Article 36 (January 2020), 33 pages.
