@@ -25,8 +25,8 @@ To build the C sampler
 
 ## Usage
 
-Please refer to [src/example.py](src/example.py) for a usage tutorial, shown
-below as well
+Please refer to [examples/example.py](examples/example.py) for a usage
+tutorial, shown below as well
 
 ```python
 import random
