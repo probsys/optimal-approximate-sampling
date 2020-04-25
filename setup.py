@@ -127,10 +127,12 @@ setup(
     packages=[
         'discrete_sampling',
         'discrete_sampling.tests',
+        'discrete_sampling.examples',
     ],
     package_dir={
         'discrete_sampling': 'src',
         'discrete_sampling.tests': 'tests',
+        'discrete_sampling.examples': 'examples',
     },
     cmdclass={
         'build_py': local_build_py,
