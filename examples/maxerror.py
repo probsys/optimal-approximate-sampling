@@ -73,4 +73,5 @@ def find_optimal_approximation(p_target, kernel, maxerror, dyadic):
     maxerror=2**-10,
     dyadic=False)
 
-print(p_approx, error, Z)
+print('optimal approximate distribution', p_approx)
+print('achieved error', error)

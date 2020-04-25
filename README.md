@@ -25,50 +25,22 @@ To build the C sampler
 
 ## Usage
 
-Please refer to [examples/example.py](examples/example.py) for a usage
-tutorial, shown below as well
+Please refer to the examples in the [examples](./examples) directory.
+Given a fixed target distribution and error measure:
 
-```python
-import random
+1. [./examples/sampling.py](./examples/sampling.py) shows an example of how
+   to find an optimal distribution and sample from it, given a
+   user-specified precision.
 
-from tempfile import NamedTemporaryFile
-from fractions import Fraction
-from collections import Counter
+2. [./examples/maxerror.py](./examples/maxerror.py) shows an example of how
+   to find an optimal distribution that uses the least possible precision
+   and obtains an error that is less than a user-specified maximum
+   allowable error.
 
-from discrete_sampling.divergences import KERNELS
-from discrete_sampling.opt import get_optimal_probabilities
-from discrete_sampling.construct import construct_sample_ky_encoding
-from discrete_sampling.sample import sample_ky_encoding
+These examples can be run directly as follows:
 
-from discrete_sampling.writeio import write_sample_ky_encoding
-
-# Target probability distribution.
-p_target = [Fraction(1, 10), Fraction(3, 10), Fraction(4, 10), Fraction(2, 10)]
-
-# Obtain optimal probabilities (Algorithm 3).
-precision = 32
-kernel = 'hellinger'
-p_approx = get_optimal_probabilities(2**precision, p_target, KERNELS[kernel])
-
-# Construct the sampler (Section 5).
-enc, n, k = construct_sample_ky_encoding(p_approx)
-
-# Run the sampler.
-num_samples = 50000
-samples = [sample_ky_encoding(enc) for _i in range(num_samples)]
-counts = Counter(samples)
-
-f_expect = [float(p) for p in p_target]
-f_actual = [counts[i]/num_samples for i in sorted(counts.keys())]
-
-print('generated %d samples' % (num_samples,))
-print('average frequencies: %s' % (f_expect,))
-print('sampled frequencies: %s' % (f_actual,))
-```
-
-This example script can be run directly:
-
-    $ ./pythenv.sh python src/example.py
+    $ ./pythenv.sh python examples/sampling.py
+    $ ./pythenv.sh python examples/maxerror.py
 
 ## Tests
 
