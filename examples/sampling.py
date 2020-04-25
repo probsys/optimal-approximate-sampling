@@ -1,6 +1,6 @@
 #!/usr/bin/env python
 
-import random
+"""Example of finding optimal distribution given a fixed precision."""
 
 from tempfile import NamedTemporaryFile
 from fractions import Fraction
