@@ -1,9 +1,9 @@
 # Copyright 2019 MIT Probabilistic Computing Project.
 # Released under Apache 2.0; refer to LICENSE.txt
 
-from discrete_sampling.utils import argmin
-from discrete_sampling.utils import argmin2
-from discrete_sampling.utils import normalize_vector
+from .utils import argmin
+from .utils import argmin2
+from .utils import normalize_vector
 
 def get_delta_error(Z, p, M, delta, kernel):
     assert delta in [-1, 1]

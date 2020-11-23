@@ -5,16 +5,16 @@ import itertools
 
 import pytest
 
-from discrete_sampling.divergences import KERNELS
-from discrete_sampling.divergences import compute_divergence_kernel
-from discrete_sampling.opt import get_optimal_probabilities
+from oas.divergences import KERNELS
+from oas.divergences import compute_divergence_kernel
+from oas.opt import get_optimal_probabilities
 
-from discrete_sampling.tests.utils import get_random_dist
-from discrete_sampling.tests.utils import get_random_dist_zeros
-from discrete_sampling.tests.utils import allclose
+from oas.tests.utils import get_random_dist
+from oas.tests.utils import get_random_dist_zeros
+from oas.tests.utils import allclose
 
-from discrete_sampling.utils import argmin
-from discrete_sampling.utils import normalize_vector
+from oas.utils import argmin
+from oas.utils import normalize_vector
 
 def get_enumeration_tuples(Z, n):
     """Get all length-n tuples of nonnegative integers which sum to Z."""

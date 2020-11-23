@@ -3,14 +3,14 @@
 
 import pytest
 
-from discrete_sampling.divergences import GENERATORS
-from discrete_sampling.divergences import KERNELS
-from discrete_sampling.divergences import LABELS
-from discrete_sampling.divergences import compute_divergence_generator
-from discrete_sampling.divergences import compute_divergence_kernel
+from oas.divergences import GENERATORS
+from oas.divergences import KERNELS
+from oas.divergences import LABELS
+from oas.divergences import compute_divergence_generator
+from oas.divergences import compute_divergence_kernel
 
-from discrete_sampling.tests.utils import allclose
-from discrete_sampling.tests.utils import get_random_dist
+from oas.tests.utils import allclose
+from oas.tests.utils import get_random_dist
 
 def disabled_test_f_divergences_graphical():
     import matplotlib.pyplot as plt

@@ -1,9 +1,9 @@
 # Copyright 2019 MIT Probabilistic Computing Project.
 # Released under Apache 2.0; refer to LICENSE.txt
 
-from discrete_sampling.utils import frac_to_bits
-from discrete_sampling.utils import get_Zkl
-from discrete_sampling.utils import reduce_fractions
+from .utils import frac_to_bits
+from .utils import get_Zkl
+from .utils import reduce_fractions
 
 # Algorithm 3.
 
