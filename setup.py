@@ -44,5 +44,7 @@ setup(
             '../c/*.c',
         ],
     },
-    tests_require=['pytest', 'scipy']
+    extras_require={
+        'tests': ['pytest', 'scipy']
+    }
 )
