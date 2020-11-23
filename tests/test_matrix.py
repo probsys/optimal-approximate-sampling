@@ -1,12 +1,12 @@
 # Copyright 2019 MIT Probabilistic Computing Project.
 # Released under Apache 2.0; refer to LICENSE.txt
 
-from discrete_sampling.matrix import make_ddg_matrix
-from discrete_sampling.matrix import make_hamming_matrix
-from discrete_sampling.matrix import make_hamming_vector
-from discrete_sampling.matrix import make_matrix
+from optas.matrix import make_ddg_matrix
+from optas.matrix import make_hamming_matrix
+from optas.matrix import make_hamming_vector
+from optas.matrix import make_matrix
 
-from discrete_sampling.utils import frac_to_bits
+from optas.utils import frac_to_bits
 
 def test_make_matrix():
     Ms, k, l = [6, 6, 6, 6], 5, 3

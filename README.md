@@ -10,10 +10,14 @@ _Proc. ACM Program. Lang._ 4, POPL, Article 36 (January 2020), 33 pages.
 
 ## Installing
 
+The Python 3 library can be installed via pip:
+
+    pip install optas
+
 The C code for the main sampler is in the `c/` directory and the
 Python 3 libraries are in the `src/` directory.
 
-Only Python 3 is required to build and use the software (no dependencies).
+Only Python 3 is required to build and use the software from source.
 
     $ git clone https://github.com/probcomp/optimal-approximate-sampling
     $ cd optimal-approximate-sampling

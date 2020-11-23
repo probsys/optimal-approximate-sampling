@@ -6,12 +6,12 @@ from tempfile import NamedTemporaryFile
 from fractions import Fraction
 from collections import Counter
 
-from discrete_sampling.divergences import KERNELS
-from discrete_sampling.opt import get_optimal_probabilities
-from discrete_sampling.construct import construct_sample_ky_encoding
-from discrete_sampling.sample import sample_ky_encoding
+from optas.divergences import KERNELS
+from optas.opt import get_optimal_probabilities
+from optas.construct import construct_sample_ky_encoding
+from optas.sample import sample_ky_encoding
 
-from discrete_sampling.writeio import write_sample_ky_encoding
+from optas.writeio import write_sample_ky_encoding
 
 # Target probability distribution.
 p_target = [Fraction(1, 10), Fraction(3, 10), Fraction(4, 10), Fraction(2, 10)]

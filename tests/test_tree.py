@@ -1,11 +1,11 @@
 # Copyright 2019 MIT Probabilistic Computing Project.
 # Released under Apache 2.0; refer to LICENSE.txt
 
-from discrete_sampling.matrix import make_ddg_matrix
-from discrete_sampling.matrix import make_matrix
-from discrete_sampling.tree import make_ddg_tree
-from discrete_sampling.tree import make_leaf_table
-from discrete_sampling.tree import make_tree
+from optas.matrix import make_ddg_matrix
+from optas.matrix import make_matrix
+from optas.tree import make_ddg_tree
+from optas.tree import make_leaf_table
+from optas.tree import make_tree
 
 def test_probs_dyadic():
     P_desired = [

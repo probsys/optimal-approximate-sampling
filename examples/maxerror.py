@@ -5,12 +5,12 @@
 from math import ceil
 from math import log2
 
-from discrete_sampling.divergences import KERNELS
-from discrete_sampling.divergences import compute_divergence_kernel
-from discrete_sampling.opt import get_optimal_probabilities
-from discrete_sampling.tests.utils import allclose
-from discrete_sampling.utils import argmin
-from discrete_sampling.utils import get_Zkl
+from optas.divergences import KERNELS
+from optas.divergences import compute_divergence_kernel
+from optas.opt import get_optimal_probabilities
+from optas.tests.utils import allclose
+from optas.utils import argmin
+from optas.utils import get_Zkl
 
 
 def find_optimal_approximation(p_target, kernel, maxerror, dyadic):
