@@ -1,8 +1,8 @@
 # Copyright 2019 MIT Probabilistic Computing Project.
 # Released under Apache 2.0; refer to LICENSE.txt
 
-from oas.packing import pack_tree
-from oas.tree import make_ddg_tree
+from optas.packing import pack_tree
+from optas.tree import make_ddg_tree
 
 def test_one_back_edge():
     k, l = 4, 0

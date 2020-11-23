@@ -5,12 +5,12 @@
 from math import ceil
 from math import log2
 
-from oas.divergences import KERNELS
-from oas.divergences import compute_divergence_kernel
-from oas.opt import get_optimal_probabilities
-from oas.tests.utils import allclose
-from oas.utils import argmin
-from oas.utils import get_Zkl
+from optas.divergences import KERNELS
+from optas.divergences import compute_divergence_kernel
+from optas.opt import get_optimal_probabilities
+from optas.tests.utils import allclose
+from optas.utils import argmin
+from optas.utils import get_Zkl
 
 
 def find_optimal_approximation(p_target, kernel, maxerror, dyadic):

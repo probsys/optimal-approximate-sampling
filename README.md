@@ -12,7 +12,7 @@ _Proc. ACM Program. Lang._ 4, POPL, Article 36 (January 2020), 33 pages.
 
 The Python 3 library can be installed via pip:
 
-    pip install oas
+    pip install optas
 
 The C code for the main sampler is in the `c/` directory and the
 Python 3 libraries are in the `src/` directory.

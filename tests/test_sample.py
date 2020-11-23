@@ -7,20 +7,20 @@ from collections import Counter
 
 import pytest
 
-from oas.matrix import make_ddg_matrix
-from oas.matrix import make_hamming_matrix
-from oas.matrix import make_hamming_vector
-from oas.packing import pack_tree
-from oas.tree import make_ddg_tree
+from optas.matrix import make_ddg_matrix
+from optas.matrix import make_hamming_matrix
+from optas.matrix import make_hamming_vector
+from optas.packing import pack_tree
+from optas.tree import make_ddg_tree
 
-from oas.sample import sample_ky_encoding
-from oas.sample import sample_ky_matrix
-from oas.sample import sample_ky_matrix_cached
+from optas.sample import sample_ky_encoding
+from optas.sample import sample_ky_matrix
+from optas.sample import sample_ky_matrix_cached
 
-import oas.flip
+import optas.flip
 
-from oas.tests.utils import get_bitstrings
-from oas.tests.utils import get_chisquare_pval
+from optas.tests.utils import get_bitstrings
+from optas.tests.utils import get_chisquare_pval
 
 @pytest.mark.parametrize('seed', [10, 20, 100123])
 def test_deterministic(seed):
@@ -63,14 +63,14 @@ def test_sample_ky_matrix_cached():
     T = make_hamming_matrix(P)
 
     samples = []
-    oas.flip.k = 4
+    optas.flip.k = 4
     for i in range(2**4):
-        oas.flip.word = i
-        oas.flip.pos = oas.flip.k
+        optas.flip.word = i
+        optas.flip.pos = optas.flip.k
         result0 = sample_ky_matrix(P, kp, lp)
 
-        oas.flip.word = i
-        oas.flip.pos = oas.flip.k
+        optas.flip.word = i
+        optas.flip.pos = optas.flip.k
         result1 = sample_ky_matrix_cached(kp, lp, h, T)
 
         assert result0 == result1

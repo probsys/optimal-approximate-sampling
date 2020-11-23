@@ -5,16 +5,16 @@ import itertools
 
 import pytest
 
-from oas.divergences import KERNELS
-from oas.divergences import compute_divergence_kernel
-from oas.opt import get_optimal_probabilities
+from optas.divergences import KERNELS
+from optas.divergences import compute_divergence_kernel
+from optas.opt import get_optimal_probabilities
 
-from oas.tests.utils import get_random_dist
-from oas.tests.utils import get_random_dist_zeros
-from oas.tests.utils import allclose
+from optas.tests.utils import get_random_dist
+from optas.tests.utils import get_random_dist_zeros
+from optas.tests.utils import allclose
 
-from oas.utils import argmin
-from oas.utils import normalize_vector
+from optas.utils import argmin
+from optas.utils import normalize_vector
 
 def get_enumeration_tuples(Z, n):
     """Get all length-n tuples of nonnegative integers which sum to Z."""

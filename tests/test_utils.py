@@ -3,13 +3,13 @@
 
 import pytest
 
-from oas.utils import encode_binary
-from oas.utils import frac_to_bits
-from oas.utils import get_Zb
-from oas.utils import get_Zkl
-from oas.utils import get_binary_expansion_length
-from oas.utils import get_k_bit_prefixes
-from oas.utils import reduce_fractions
+from optas.utils import encode_binary
+from optas.utils import frac_to_bits
+from optas.utils import get_Zb
+from optas.utils import get_Zkl
+from optas.utils import get_binary_expansion_length
+from optas.utils import get_k_bit_prefixes
+from optas.utils import reduce_fractions
 
 def bits_to_int(bits):
     # Helper function for converting bit string to integer.

@@ -19,9 +19,9 @@ root=`cd -- "$(dirname -- "$0")" && pwd`
         # activates integration testing code path. If --integration is
         # not specified then a __ci_() test will either run as a crash test
         # or not run at all. (Use git grep '__ci_' to find these tests.)
-        ./pythenv.sh "$PYTHON" -m pytest --pyargs oas
+        ./pythenv.sh "$PYTHON" -m pytest --pyargs optas
     elif [ ${1} = 'crash' ]; then
-        ./pythenv.sh "$PYTHON" -m pytest -k 'not __ci_' --pyargs oas
+        ./pythenv.sh "$PYTHON" -m pytest -k 'not __ci_' --pyargs optas
     elif [ ${1} = 'release' ]; then
         # Make a release
         rm -rf dist

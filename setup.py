@@ -12,7 +12,7 @@ m = open(os.path.join(dirname, 'src', '__init__.py')).read()
 __version__ = vre.findall(m)[0]
 
 setup(
-    name='oas',
+    name='optas',
     version=__version__,
     description='Optimal Approximate Sampling from Discrete Probability Distributions',
     long_description=open('README.md').read(),
@@ -28,17 +28,17 @@ setup(
         'Programming Language :: Python :: 3',
     ],
     packages=[
-        'oas',
-        'oas.tests',
-        'oas.examples',
+        'optas',
+        'optas.tests',
+        'optas.examples',
     ],
     package_dir={
-        'oas': 'src',
-        'oas.tests': 'tests',
-        'oas.examples': 'examples',
+        'optas': 'src',
+        'optas.tests': 'tests',
+        'optas.examples': 'examples',
     },
     package_data={
-        'oas': [
+        'optas': [
             'orderm2',
             'phi',
             '../c/*.c',
