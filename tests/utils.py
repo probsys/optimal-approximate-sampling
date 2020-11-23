@@ -31,7 +31,7 @@ def get_random_dist(n):
 
 def get_random_dist_zeros(n):
     numerators = [random.randint(0, n**2) for i in range(n)]
-    n_zero = random.randint(0, n-1)
+    n_zero = random.randint(1, n-1)
     numerators[:n_zero] = [0]*n_zero
     random.shuffle(numerators)
     Z = sum(numerators)
