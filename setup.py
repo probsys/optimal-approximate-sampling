@@ -17,7 +17,7 @@ setup(
     description='Optimal Approximate Sampling from Discrete Probability Distributions',
     long_description=open('README.md').read(),
     long_description_content_type='text/markdown',
-    url='https://github.com/probcomp/oas',
+    url='https://github.com/probcomp/optimal-approximate-sampling',
     maintainer='Feras A. Saad',
     maintainer_email='fsaad@mit.edu',
     license='Apache-2.0',
