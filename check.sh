@@ -20,6 +20,8 @@ root=`cd -- "$(dirname -- "$0")" && pwd`
         # not specified then a __ci_() test will either run as a crash test
         # or not run at all. (Use git grep '__ci_' to find these tests.)
         ./pythenv.sh "$PYTHON" -m pytest --pyargs optas
+        # Run C crash test.
+        cd c/ && make test
     elif [ ${1} = 'crash' ]; then
         ./pythenv.sh "$PYTHON" -m pytest -k 'not __ci_' --pyargs optas
     elif [ ${1} = 'release' ]; then
@@ -31,7 +33,4 @@ root=`cd -- "$(dirname -- "$0")" && pwd`
         # If args are specified delegate control to user.
         ./pythenv.sh "$PYTHON" -m pytest "$@"
     fi
-
-    # Run C crash test.
-    cd c/ && make test
 )
